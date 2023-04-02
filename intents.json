@@ -1,0 +1,135 @@
+{"intents":[
+        {"tag": "greetings",
+        "patterns": ["hello","hi","hey","good day"],
+        "responses":["Hello","Hi", "What can I do for you?"]
+        },
+        {"tag": "goodbye",
+        "patterns": ["bye","cya","goodbye","see ya", "thank you", "thanks", "thanks so much"],
+        "responses":["Goodbye","See you later", "I hope that helped"]
+        },
+        {"tag": "autosense",
+        "patterns": ["switching from customised","autosense","switching to Automatic"],
+        "responses":["A streaming program will be activated automatically as soon as an audio signal from your Bluetooth device was received in the hearing aids. After the streaming event Automatic (AutoSense OS) will be activated. Every time such tone is played by the smartphone, the hearing aid will switch. We recommend you to switch off tones from your smartphone settings to resolve the issue, e.g. system tones, touch tones, keyboard tones, screen lock tones, screenshot tone, app sounds as well as notification tones from messages (SMS, email, push notifications, …). Please note, in addition to AutoSense OS, your hearing healthcare professional can create additional manual programs for you that are persistent and will be reactivated after Bluetooth streaming. "]
+        },
+        {"tag": "bluetooth",
+        "patterns": ["How many bluetooth devices can I connect to my phonak nathos nova hearing aids", "how many bluetooth devices can i connect", "amount of bluetooth devices"],
+        "responses":["You can pair two Bluetooth devices (e.g. smartphone) with your Nova hearing aids where one device can be connected at the same time. If you want to pair new a smartphone to your Phonak Nathos Nova hearing aid, follow these steps: Click ”Forget devices” on the device that is paired at the moment. Ensure that Bluetooth wireless technology is enabled on the device that you are going to pair with. Search for Bluetooth enabled devices in the connectivity menu. Battery: open battery door- wait 5 seconds and close it again. Rechargeable: Switch the Phonak Nova hearing aid off and on using the multi-function button"]
+        },
+        {"tag": "appConnection",
+        "patterns": ["why cant the phonak app pair or connect to my hearing aids","app won't pair", "app won't connect", "app won't work"],
+        "responses":["There can be several reasons why the hearing aids cannot connect. Try the troubleshooting steps below: You need to do an initial setup in the app and pair your hearing aids. Pairing needs to be done only during the setup of the app. Afterwards the app remembers your hearing aids and will attempt to connect automatically whenever the app is opened. Check if the hearing aids are already paired to the app. During the pairing process an internet connection is needed. Check if Bluetooth on your smartphone is activated. Make sure your phone and hearing aids are not in flight mode. On Android smartphones- Location Services must be enabled during the initial setup of the app. After the initial setup- Location Services are not required for the app to work. When reconnecting to the app make sure that: Bluetooth is enabled on your smartphone. Make sure your phone and hearing aids are not in flight mode. If pairing during the setup of the app was not done or failed- restart the hearing aids to begin the pairing process."]
+        },
+        {"tag": "howToConnect",
+        "patterns": ["how to pair to my iphone", "how to connect to my iphone", "iphone connection","connect to phone"],
+        "responses":["1.Go to your iPhone home screen and tap on the “Settings” icon. 2.In the settings menu, tap on the “Bluetooth®” icon. 3.Tap on the slider to turn Bluetooth“on”. 4.First open for 5 seconds and then close the battery doors or switch the hearing aids off and on again if you have a rechargeable Phonak hearing aid. 5.After several seconds, the name of your Phonak hearing aids will appear on the iPhone screen. 6. Select the hearing aid from Bluetooth enabled devices list. 7.A beep from the hearing aid confirms successful pairing. Your iPhone is now connected to the Phonak hearing aids."]
+        },
+        {"tag": "repairCost",
+        "patterns": ["how much do repairs cost", "repairs price"],
+        "responses":["Every clinic has its own prices. Sometimes the cost of the repair is even included in the package when you initially bought your hearing aid. Since every situation is different, it's best to check with your HCP to find out."]
+        },
+        {"tag": "repairFrequency",
+        "patterns": ["when are repairs needed", "when do i need repairs", "how often do i need to repair my hearing aid", "repair frequency"],
+        "responses":["If your hearing aid doesn't appear to turn on and you've tried changing the battery, or if the sound from your hearing aid is distorted, muffled, or intermittent, then hearing aid repairs might be needed."]
+        },
+        {"tag": "compatibility",
+        "patterns": ["Which hearing aids are compatible with the myPhonak app?", "compatible hearing aids", "compatibility", "which hearing aids connect to the app", "which hearing aids are compatible with the app"],
+        "responses":["The following Phonak hearing aids are compatible with the myPhonak app: Phonak Audéo L (Lumity), Phonak Audéo L Life (Lumity), Phonak Audéo P Fit (Paradise), Phonak Audéo P Life (Paradise), Phonak Audéo P (Paradise), Phonak Virto P-312 (Paradise), Phonak Naida P (Paradise), Phonak Audéo M (Marvel), Phonak Virto M-312 (Marvel), Phonak Bolero M (Marvel), Phonak Naida M-SP (Marvel), Phonak Naida Link M (Marvel), Phonak Audéo B-Direct* (Belong) *Advanced Remote Control and Remote Support not available. Please note, Phonak CROS P is not supported by the myPhonak app. Phonak CROS P in order to work requires to be fitted with Audéo P. Both devices are not recognized by the myPhonak app if fitted together."]
+        },
+        {"tag": "TVConnect",
+        "patterns": ["How to connect Phonak hearing aids to a TV?", "connect to a tv", "connect my hearing aid to the tv"],
+        "responses":["Please consider the following points: The Phonak TV Connector device is recommended to stream the TV audio directly to the Phonak hearing aids. This will turn your hearing into a wireless stereo headset. For more information regarding Phonak TV Connector, visit our product information website or contact your hearing care professional."]
+        },
+        {"tag": "tipsAndTricks",
+        "patterns": ["Tips and tricks for iPhones to ensure easy pairing and use of my Phonak hearing aids", "easy pairing", "how do i pair for a phonecall", "bluetooth connect for phone call"],
+        "responses":["Make sure the phone is updated to the latest iOS version: Settings - General - About - Version. If your phone call is not automatically heard in the hearing aids, change call audio routing on your phone: Settings - General - Accessibility - Call Audio Routing - Change to Bluetooth Headset. If you hear keyboard sounds in your hearing aids, turn off audible alerts: Settings – Sounds & Haptics (iPhone 6s and higher) or Sounds. Scroll down and turn off Keyboard Clicks and Lock Sounds. Select the ring or alert tone for each option (text, voicemail, email, ringtone, etc) and manually change each alert tone from the currently selected sound to “none” or “vibrate”. Close open apps: From the Home screen, quickly press the Home button (at the bottom) twice then swipe the screen left or right to view the list of apps. Scroll through the list of apps, hold the app then swipe it up and off the screen. Close open apps (iPhone X and newer): From the Home screen, swipe up from the bottom of the screen and pause near the middle of the screen until all open app cards appear. Scroll through the list of apps, hold down on the app and then tap the red minus sign. If none of the mentioned points will help, please reboot your phone and try again."]
+        },
+        {"tag": "firewall",
+        "patterns": ["I have firewall issues", "firewall won't let me connect","firewall"],
+        "responses":["Companies which have a firewall in place might potentially block outgoing connections to Phonak eServices including access to PhonakPro as well as video calling during a Remote Support session.\nIf you are having problems connection to your PhonakPro account or establishing a Remote Support video call, it could be due to a firewall.\nWe have compiled a list of IP address that are used for Phonak eServices and are required for a Remote Support session.\nPlease contact Phonak for this list if you do not already have one.\nContact your Information Technology (IT) support and provide them with the configurations below. They must make sure that the following connections are unblocked."]
+        },
+        {"tag": "appPairing",
+        "patterns": ["hearing aids do not pair to the app", "app pairing", "how do i pair with the app", "why can't i pair my hearing aids with the app"],
+        "responses":["1.Remove the Bluetooth® pairing 2.Open Phonak Target 3.Device Options 4.Check “Delete all pairings”"]
+        },
+        {"tag": "remoteVideoCall",
+        "patterns": ["I cannot log into the Phonak Remote Support video call."],
+        "responses":["• Check your internet connection. • Check if you have your webcam activated. • Check you are registered and logged in to PhonakPro • Check you have sent the invite to the client • If there is more than one clinic site, make sure the clinic site where the first fitting took place is selected."]
+        },
+        {"tag": "myPhonak",
+        "patterns": ["what is myPhonak", "myPhonak"],
+        "responses":["myPhonak is a private, online platform that provides up-to-date information on your hearing technology and your hearing needs. When you sign into the myPhonak portal, you will find product-related information for your hearing aids and accessories, as well as relevant articles regarding the use of your hearing aids. You can also find contact information for your audiologist or hearing care professional."]
+        },
+        {"tag": "myPhonakUsers",
+        "patterns": ["who can use myphonak", "who can access myphonak", "can i use myphonak", "who can use the app", "can i use the app"],
+        "responses":["The myPhonak platform was created to provide relevant information for the hearing aid user or person with hearing loss. However, family members and non-hearing aid wearers may also find the content valuable. "]
+        },
+        {"tag": "myPhonakFeatures",
+        "patterns": ["what are the features of myphonak", "what does myphonak do", "how can myphonak help me", "features of the app", "what does the app do", "how does the app work"],
+        "responses":["myPhonak currently offers support information for your hearing aids and accessories. You can add your hearing care professional's contact information for easy reference and find relevant information regarding use of your hearing aids."]
+        },
+        {"tag": "myPhonakMedicalProfessional",
+        "patterns": ["will myphonak replace a medical professional", "will my phonak replace the need for a medical professional", "will i still need a medical professional", "will the app mean i don't need a medical professional"],
+        "responses":["The myPhonak platform helps you find answers to your day-to-day questions around your hearing aids and accessories. This includes simple troubleshooting advice, common Q&As, and tips and tricks for using your Phonak technology. The platform does not provide medical advice or questions on specific needs. We recommend you still have regular contact with your hearing care professional."]
+        },
+        {"tag": "myPhonakSignUp",
+        "patterns": ["I cant sign up", "I'm having trouble signing up", "sign up doesnt work", "how do i sign up", "why doesn't sign up work"],
+        "responses":["1.Make sure you checked the box next to the “I'm not a robot” statement. 2. Make sure you checked the boxes next to Terms and Conditions and Privacy Policy. 3. Make sure you filled out all mandatory fields. 4. Check your spam folder for the activation email. 5. Try registering again."]
+        },
+        {"tag": "myPhonakActivationEmail",
+        "patterns": ["i didnt recieve the activation email", "no activation email", "activation email"],
+        "responses":["Check your spam folder. Otherwise, try registering again."]
+        },
+        {"tag": "myPhonakPassword",
+        "patterns": ["i forgot my password", "forgotten password"],
+        "responses":["Go to the Login tab on myPhonak. Click “Forgot password” below the password field. Type in your email address and click “Reset my password.” You will receive an email with instructions on how to complete your password change. Check your spam folder if you are not getting the “Reset my password” email."]
+        },
+        {"tag": "myPhonakResetPassword",
+        "patterns": ["i didn't get the reset my password email", "reset password", "password reset"],
+        "responses":["Check your spam folder. Otherwise, try the “Reset my password” button again."]
+        },
+        {"tag": "myPhonakRegisterHearingAids",
+        "patterns": ["regsiter my heading aids", "register a new hearing aid"],
+        "responses":["There are several ways to get to the hearing aid registration page: 1.Use the 'Product' tab and follow the instructions after you click on 'Register hearing aid' 2.Use the product registration pop up on the myPhonak dashboard page 3.Use the teaser on the myPhonak dashboard page"]
+        },
+        {"tag": "myPhonakRegisterAccessory",
+        "patterns": ["register accessory", "how can i register a new accessory"],
+        "responses":["The accessories can only be registered on the “Product” tab once you have logged in to myPhonak. Please scroll down below the hearing aids section and click on the “Add accessory” button. You can add your accessory by serial number or product name."]
+        },
+        {"tag": "myPhonakEdit",
+        "patterns": ["edit hearing aid already regsitered", "how do i edit an accessory", "edit already regsitered device"],
+        "responses":["Edit functionality is not yet available. If you’d like to make a change, delete the current information and add the new information."]
+        },
+        {"tag": "myPhonakRegisterProfessional",
+        "patterns": ["how do i regsiter my hearing care porfessional", "add my hearing care professional", "add a professional"],
+        "responses":["Go to the “Your Hearing Care Professional” tab once you have logged in to myPhonak. Here you can add your hearing care p contact information for easy reference."]
+        },
+        {"tag": "myPhonakEditProfessional",
+        "patterns": ["edit the hearing care professional", "edit information about hearing care professional"],
+        "responses":["Go to the “Your Hearing Care Professional” tab once you have logged in and select the delete option next to your hearing care professional’s name. Then add the correct information."]
+        },
+        {"tag": "myPhonakEditProfile",
+        "patterns": ["edit my data", "edit my profile"],
+        "responses":["You can edit your personal data in the “profile” section once you have logged in to myPhonak. There is an edit functionality to the right of each field."]
+        },
+        {"tag": "myPhonakUnsubscribe",
+        "patterns": ["unsubscribe from the newsletter", "unsubscribe"],
+        "responses":["You can unsubscribe from the myPhonak newsletter in the profile section. If you scroll down, you will find an area where you can edit your “Consent and privacy.” After you click on “Edit” on the right side of the page, uncheck the box next to the newsletter sign up and click “Save.”"]
+        },
+        {"tag": "myPhonakDelete",
+        "patterns": ["delete my account", "delete"],
+        "responses":["You can delete your account in the profile section. Find it at the bottom of the page. "]
+        },
+        {"tag": "myPhonakSerialNumber",
+        "patterns": ["where is the serial number of my hearing aid", "where is the serial number of my accessories", "where is the serial number"],
+        "responses":["You can find the serial number of your hearing aids in the battery compartment. You can find the serial number of your accessories either on the back side, in the battery compartment or in the settings section of the accessories."]
+        },
+        {"tag": "myPhonakBrowser",
+        "patterns": ["myPhonak doesn't appear properly on my browser", "browser compatibility", "doesnt work with my browser"],
+        "responses":["It is recommended to upgrade your browser before using myPhonak, as the website is designed for the most recent browser versions."]
+        },
+        {"tag": "fallback",
+        "patterns": [""],
+        "responses":["I'm sorry I don't understand what you are asking. Please can you rephrase your question or consider this website for further help https://www.phonak.com/au/en/support/product-support.html."]
+        }
+]
+}

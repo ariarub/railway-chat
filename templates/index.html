@@ -1,0 +1,171 @@
+<!--Code edited from Data Magic Youtube video AI Chatbot in Web application | Embed ChatBot in Flask Application | Python Chatbot Tutorial
+https://www.youtube.com/watch?v=7BhTcELc9QA -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatBot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      #chatbox {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        font-size: 16px;
+      }
+
+      #chatbox p {
+        padding: 5px;
+      }
+
+      .userText {
+        text-align: right;
+        border-radius: 5px;
+        border: 1px solid blue;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        background: #ececec;
+ 
+      }
+
+      .userText span {
+        background-color:#ececec;
+        padding: 5px;
+        
+      }
+
+      .botText {
+        text-align: left;
+        border-radius: 5px;
+        border: 1px solid green;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        background: rgb(117, 176, 224);
+      }
+
+
+
+      .botText span {
+        background-color: rgb(117, 176, 224);
+        padding: 5px;
+        
+      }
+
+      #userInput {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      #textInput {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 1.2em;
+      }
+
+      #tidbit {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border: 2px solid black;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      #fontSizeControl {
+        width: 100px;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>To troubleshoot your hearing aid please describe the problems that you are facing</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div id="chatbox">
+            <p class="botText"><span>Hi! Please describe any issues you are currently facing with your Phonak hearing aid or myPhonak app</span></p>
+          </div>
+          <div id="userInput">
+            <input id="textInput" type="text" name="msg" placeholder="Enter message here..." class="form-control">
+          </div>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <span id="font-size-btn1">Decrease Font</span>
+            </label>
+            <label class="btn btn-secondary">
+              <span id="font-size-btn2">Increase Font</span>
+          </label>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function getBotResponse() {
+          var rawText = $("#textInput").val();
+          var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+          document
+            .getElementById("userInput")
+            .scrollIntoView({ block: "start", behavior: "smooth" });
+          $.get("/get", { msg: rawText }).done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+            $("#chatbox").append(botHtml);
+            document
+              .getElementById("userInput")
+              .scrollIntoView({ block: "start", behavior: "smooth" });
+          });
+        }
+        $("#textInput").keypress(function(e) {
+          if (e.which == 13) {
+            getBotResponse();
+          }
+        });
+        
+      $("#font-size-btn2").click(function () {
+        var currentFontSize = parseInt($("#chatbox").css("font-size"));
+        var newFontSize = currentFontSize + 2; // Increase font size by 2px
+        $("#chatbox").css("font-size", newFontSize + "px");
+      });
+
+      $("#font-size-btn1").click(function () {
+        var currentFontSize = parseInt($("#chatbox").css("font-size"));
+        var newFontSize = currentFontSize - 2; // Decrease font size by 2px
+        $("#chatbox").css("font-size", newFontSize + "px");
+      });
+
+      </script>
+</body>
+</html>
