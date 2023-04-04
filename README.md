@@ -7,8 +7,9 @@ This chatbot was created in order to provide users with a convenient and effecti
 
 1. Clone the repository from GitHub. The HTTPS key for the repository is https://github.com/ariarub/railway-chat.git.
 2. Set up a virtual environment by running the commands: pip install virtualenv `pip install virtualenv`, `virtualenv venv`, `source venv/bin/activate`.
-3. Install the required dependencies by running the following command in the terminal: `pip install -r requirements.txt`
-4. Ensure that you have a Python environment set up on your machine. This code is built and tested with Python 3.10.8.
+3. Change directory into railway-chat `cd railway-chat`.
+4. Install the required dependencies by running the following command in the terminal: `pip install -r requirements.txt`
+5. Ensure that you have a Python environment set up on your machine. This code is built and tested with Python 3.10.8.
 
 # Running the Chatbot
 
