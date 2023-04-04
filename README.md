@@ -1,10 +1,3 @@
----
-title: Flask
-description: A popular minimal server framework for Python
-tags:
-  - python
-  - flask
----
 
 # Background
 This chatbot was created in order to provide users with a convenient and effective way to troubleshoot common problems that they may encounter with their hearing aids. With its user-friendly interface and fast and accurate responses, users can use it to troubleshoot problems that they may encounter
