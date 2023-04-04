@@ -1,5 +1,5 @@
 #Code edited from Neural Nine Youtube video Intelligent AI Chatbot in Python
-# https://www.youtube.com/watch?v=1lwddP0KUEg 
+#https://www.youtube.com/watch?v=1lwddP0KUEg 
 
 import random 
 import json 
